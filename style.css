@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+html {
+    --primary-text: #ffffff;
+    --secondary-text: #4C4C4C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-text);
+  text-decoration: none;
+}
+
+
+/* @keyframes bg-animate {
+  0% {
+    background-color: #ff8b5e;
+  }
+  50% {
+    background-color: #f87b45;
+  }
+  75% {
+    background-color: #d2673a;
+  }
+  100% {
+    background-color: #ff8b5e;
+  }
+} */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/************************ Hero Section *************************/
+
+.hero-section {
+  animation: gradient 15s ease infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  height: 100vh;
+  background-size: 400% 400%;
+  position: relative;
+  z-index: 1;
+  padding: 40px 80px;
+  box-sizing: border-box;
+}
+
+/**************** Nav part *******************/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo > h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+}
+
+.links > a {
+    position: relative;
+    padding: 10px 0;
+}
+
+.links > a:hover{
+    transform: scale(1.1);
+}
+
+.links > a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-text);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.links > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+.contact {
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 1px solid var(--primary-text);
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleY(0);
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-text);
+    transform-origin: 0 0;
+    transition: transform 0.25s ease-out;
+    z-index: -1;
+}
+
+.contact:hover {
+    color: var(--secondary-text);
+}
+
+.contact:hover::before {
+    transform-origin: 0 0;
+    transform: scaleY(1);
+    transform: transform 0.5s ease-out;
+}
+
+/**************** Hero part *******************/
+.wrapper {
+  padding: 10px;
+  border: 3px solid var(--primary-text);
+  width: 250px;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 2;
+  border-radius: 100%;
+}
+
+.wrapper > .hero-pic {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  border-radius: 100%;
+  z-index: -1;
+  background-color: var(--primary-text);
+}
