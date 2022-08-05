@@ -46,7 +46,7 @@ html {
 .hero-section {
   animation: gradient 15s ease infinite;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  height: 500vh;
+  height: 150vh;
   background-size: 400% 400%;
   position: relative;
   z-index: 1;
@@ -64,6 +64,8 @@ html {
     position: sticky;
     top: 0;
     padding: 30px 80px;
+    z-index: 10;;
+    /* box-sizing: border-box; */
 }
 
 .nav-active {
@@ -149,13 +151,25 @@ html {
 /**************** Hero part *******************/
 
 .hero-part {
-    padding: 40px 80px;
+    box-sizing: border-box;
+    padding: 0 0 0 15vw ;
+    height: 100%;
+}
+
+.first-part {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    padding-bottom: 40px;
+    gap: 80px;
+    /* max-height: 70%; */
+    min-height: 100vh;
 }
 
 .wrapper {
   padding: 10px;
   border: 3px solid var(--primary-text);
-  width: 250px;
+  width: 300px;
   display: inline-block;
   overflow: hidden;
   z-index: 2;
@@ -169,4 +183,37 @@ html {
   border-radius: 100%;
   z-index: -1;
   background-color: var(--primary-text);
+}
+
+.text > h1 {
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+.text > h5 {
+    color: var(--secondary-text);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.contact-part {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 15vw 0 0;
+    gap: 80px;
+    text-align: right;
+}
+
+.contact-part  p {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--secondary-text);
+    font-weight: 500;
+}
+
+.contact-part h6 {
+    font-size: 28px;
+    font-weight: 500;
 }
