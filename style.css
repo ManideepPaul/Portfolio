@@ -46,11 +46,10 @@ html {
 .hero-section {
   animation: gradient 15s ease infinite;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  height: 100vh;
+  height: 500vh;
   background-size: 400% 400%;
   position: relative;
   z-index: 1;
-  padding: 40px 80px;
   box-sizing: border-box;
 }
 
@@ -62,6 +61,14 @@ html {
     gap: 60px;
     align-items: center;
     margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    padding: 30px 80px;
+}
+
+.nav-active {
+    background-color: #ee7752;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
 .logo > h3 {
@@ -140,6 +147,11 @@ html {
 }
 
 /**************** Hero part *******************/
+
+.hero-part {
+    padding: 40px 80px;
+}
+
 .wrapper {
   padding: 10px;
   border: 3px solid var(--primary-text);
