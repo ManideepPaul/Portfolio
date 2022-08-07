@@ -124,11 +124,19 @@ html {
   transform: transform 0.5s ease-out;
 }
 
+/***************** Mob-Nav Part ****************/
+
+.ham {
+  visibility: hidden;
+  position: absolute;
+  cursor: pointer;
+}
+
 /**************** Hero part *******************/
 
 .hero-part {
   box-sizing: border-box;
-  padding: 50px 0 0 12vw;
+  padding: 50px 6vw 0 12vw;
   height: 100%;
 }
 
