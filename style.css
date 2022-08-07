@@ -3,6 +3,7 @@
 html {
   --primary-text: #ffffff;
   --secondary-text: #4a4a4a;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -113,7 +114,7 @@ html {
   z-index: -1;
 }
 
-.contact:hover {
+.contact:hover a {
   color: var(--secondary-text);
 }
 
@@ -127,7 +128,7 @@ html {
 
 .hero-part {
   box-sizing: border-box;
-  padding: 0 0 0 12vw;
+  padding: 50px 0 0 12vw;
   height: 100%;
 }
 
@@ -138,7 +139,7 @@ html {
   padding-bottom: 40px;
   gap: 80px;
   /* max-height: 70%; */
-  min-height: 70vh;
+  min-height: 65vh;
 }
 
 .wrapper {
@@ -216,8 +217,8 @@ html {
 /************************ Work Section *************************/
 
 .work-section {
-  padding: 80px 12vw 80px 12vw;
-  background-color: #ffffff;
+  padding: 120px 12vw 80px 12vw;
+  background-color: #f1f1f1;
 }
 
 .work-section h2 {
