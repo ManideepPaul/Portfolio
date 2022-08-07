@@ -1,0 +1,35 @@
+@media screen and (max-width: 1010px) {
+    .links, .contact {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .ham {
+        visibility: visible;
+        position: relative;
+    }
+
+    .mob-nav {
+        background-color: #4a4a4a;
+        position: sticky;
+        top: 12vh;
+        z-index: 20px;
+    }
+
+    .navbar {
+        height: 12vh;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+
+    .mob-nav > .links {
+        visibility: visible;
+        flex-direction: column;
+        padding: 30px 80px 30px 80px;
+        width: min-content;
+        position: static;
+        gap: 15px;
+    }
+}
