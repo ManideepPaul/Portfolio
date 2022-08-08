@@ -28,6 +28,7 @@ html {
   z-index: 1;
   box-sizing: border-box;
   padding-bottom: 60px;
+  transition: 0.5s ease-in;
 }
 
 /**************** Nav part *******************/
@@ -148,7 +149,8 @@ html {
 .first-part {
   display: flex;
   align-items: center;
-  align-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
   padding-bottom: 40px;
   gap: 80px;
   /* max-height: 70%; */
@@ -199,6 +201,7 @@ html {
 .contact-part {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   margin: 0 15vw 0 0;
   gap: 80px;
   text-align: right;
@@ -307,12 +310,13 @@ html {
   transform: scaleY(1);
 }
 
-/************************ Work Section *************************/
+/************************ Footer Section *************************/
 
 footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 25px;
   background-color: #000000;
   padding: 50px 150px;
 }
