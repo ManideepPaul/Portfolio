@@ -40,6 +40,10 @@
     padding-bottom: 0;
   }
 
+  .hero-part {
+    padding: 30px 15px;
+  }
+
   .wrapper {
     width: 150px;
   }
@@ -92,6 +96,7 @@
 
   .navbar {
     height: 12vh;
+    padding: 30px 15px;
     padding-bottom: 30px;
     box-sizing: border-box;
     margin: 0;
@@ -116,7 +121,7 @@
   /************************ Work Section *************************/
 
   .work-section {
-    padding: 120px 40px 80px 40px;
+    padding: 120px 15px 80px 15px;
   }
 
   .work-section h2 {
@@ -131,7 +136,7 @@
 
   footer {
     flex-wrap: wrap;
-    padding: 50px 40px;
+    padding: 50px 15px;
   }
 }
 
