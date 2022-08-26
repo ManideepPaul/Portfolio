@@ -1,3 +1,18 @@
+@media screen and (min-width: 1260px) {
+  /**************** Hero section **********************/
+  .hero-part {
+    width: 1260px;
+  }
+
+  .work-wrapper {
+    width: 1260px;
+  }
+
+  .footer-wrapper {
+    width: 1260px;
+  }
+
+}
 @media screen and (max-width: 1380px) {
   /******************** Nav section ****************/
 
@@ -135,7 +150,6 @@
   /************************ Footer Section *************************/
 
   footer {
-    flex-wrap: wrap;
     padding: 50px 15px;
   }
 }

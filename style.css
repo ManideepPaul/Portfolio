@@ -155,7 +155,8 @@ body::-webkit-scrollbar-thumb {
 
 .hero-part {
   box-sizing: border-box;
-  padding: 50px 6vw 0 12vw;
+  /* padding: 50px 6vw 0 12vw; */
+  margin: 0 auto 0 auto;
   height: 100%;
 }
 
@@ -255,8 +256,12 @@ body::-webkit-scrollbar-thumb {
 /************************ Work Section *************************/
 
 .work-section {
-  padding: 120px 12vw 80px 12vw;
+  padding: 120px 0 80px 0;
   background-color: #f1f1f1;
+}
+
+.work-wrapper {
+  margin: 0 auto 0 auto;
 }
 
 .work-section h2 {
@@ -326,12 +331,17 @@ body::-webkit-scrollbar-thumb {
 /************************ Footer Section *************************/
 
 footer {
+  background-color: #000000;
+  padding: 50px 0;
+}
+
+.footer-wrapper {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   gap: 25px;
-  background-color: #000000;
-  padding: 50px 150px;
+  margin: 0 auto 0 auto;
 }
 
 footer h3 {
