@@ -315,6 +315,7 @@ body::-webkit-scrollbar-thumb {
   justify-content:flex-end ;
   align-items: center;
   gap: 15px;
+  padding-top: 10px
 }
 
 .hot-links h4, .hot-links h3{
@@ -329,7 +330,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .hot-links a {
