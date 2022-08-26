@@ -353,19 +353,19 @@ footer span {
   color: #ee7752;
 }
 
-footer > .socials {
+footer  .socials {
   display: flex;
   gap: 20px;
 }
 
-footer > .socials > a {
+footer  .socials  a {
   padding: 5px 5px 1px 5px;
   border-radius: 5px;
   background-color: #ee775233;
   transition: 0.3s ease-in;
 }
 
-footer > .socials > a:hover {
+footer  .socials  a:hover {
   transform: rotateY(180deg);
 }
 
