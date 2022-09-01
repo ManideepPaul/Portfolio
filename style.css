@@ -146,7 +146,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
-.mob-nav{
+.mob-nav {
   visibility: hidden;
   position: absolute;
 }
@@ -253,6 +253,30 @@ body::-webkit-scrollbar-thumb {
   transform-origin: bottom left;
 }
 
+/************************ Tech Stack Section *************************/
+
+.tech-stack-section {
+  padding: 100px 0;
+  background-color: #f1f1f1;
+}
+
+.tech-wrapper {
+  margin: 0 auto 0 auto;
+}
+
+.tech-wrapper h2 {
+  color: var(--secondary-text);
+  font-size: 52px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.tech-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 /************************ Work Section *************************/
 
 .work-section {
@@ -312,13 +336,14 @@ body::-webkit-scrollbar-thumb {
   transform: scaleY(0);
   display: flex;
   flex-direction: column;
-  justify-content:flex-end ;
+  justify-content: flex-end;
   align-items: center;
   gap: 15px;
-  padding-top: 10px
+  padding-top: 10px;
 }
 
-.hot-links h4, .hot-links h3{
+.hot-links h4,
+.hot-links h3 {
   background-color: #ee7752;
   padding: 5px 15px;
   border-radius: 15px;
@@ -377,19 +402,19 @@ footer span {
   color: #ee7752;
 }
 
-footer  .socials {
+footer .socials {
   display: flex;
   gap: 20px;
 }
 
-footer  .socials  a {
+footer .socials a {
   padding: 5px 5px 1px 5px;
   border-radius: 5px;
   background-color: #ee775233;
   transition: 0.3s ease-in;
 }
 
-footer  .socials  a:hover {
+footer .socials a:hover {
   transform: rotateY(180deg);
 }
 

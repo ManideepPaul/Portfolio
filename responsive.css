@@ -4,6 +4,10 @@
     width: 1260px;
   }
 
+  .tech-wrapper {
+    width: 1260px;
+  }
+
   .work-wrapper {
     width: 1260px;
   }
@@ -132,6 +136,13 @@
   .mob-menu-visible > a:hover {
     transform: scale(1);
   }
+
+/************************ Tech Stack Section *************************/
+
+.tech-stack-section {
+  padding: 100px 15px;
+}
+
 
   /************************ Work Section *************************/
 
